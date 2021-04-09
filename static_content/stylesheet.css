@@ -1,0 +1,142 @@
+section, body section{
+    display: flexbox;
+    flex: 1 1 500px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-content: center;
+
+}
+
+/* Title header */
+
+h1 {
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightsteelblue;
+    border: 3px solid blue;
+}
+
+/* Login page ui */
+
+input[id=username], input[id=password], input[id=loginSubmit],
+input[id=regusername], input[id=regpassword], input[id=registerSubmit],
+input[id=RSubmit], input[id=logSubmit] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input[id=username], input[id=password] {
+    padding: 10px;
+    margin: 10px;
+}
+
+input[id=loginSubmit] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+div[id=ui_login] {
+    width: 320px;
+    padding: 10px;
+}
+
+/* Register page ui */
+
+input[id=regusername], input[id=regpassword] {
+    padding: 10px;
+    margin: 10px;
+}
+
+input[id=registerSubmit] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+div[id=ui_register] {
+    width: 320px;
+    padding: 10px;
+}
+
+/* Navigation bar */
+
+nav {
+    float: center;
+    margin: 0;
+    width: 100%;
+}
+
+a {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+nav ul {
+    list-style-type: none;
+
+    padding: 0;
+    text-align: center;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:stretch;
+    justify-content:space-evenly;
+
+
+}
+   
+nav ul {
+    text-decoration: none;
+    text-align: center;
+
+    min-width: 200px;
+
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+    padding: 7px;
+    margin: 7px;
+    /* border:1px solid black; */
+    /* background: black; */
+    color: white;
+
+
+}
+
+section > a:hover {
+    text-align: center;
+    align-content: center;
+    background-color: white;
+
+}
+
+
+
+  
+  a:active, a:hover{
+    transition:.5s ease;
+
+    background-color: orchid;
+  }

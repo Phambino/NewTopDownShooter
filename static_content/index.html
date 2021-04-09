@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta HTTP-EQUIV="EXPIRES" CONTENT="-1">
+		<script src="jquery-3.5.1.min.js"></script>
+		<script language="javascript" src="model.js" > </script>
+		<script language="javascript" src="model_.js" > </script>
+		<script language="javascript" src="controller.js" > </script>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<style>
+			#ui_login { display:block; }
+			#ui_register { display:block; }
+			#ui_play { display:none; }
+		</style>
+		<title>f0rt9it32d</title>
+	</head>
+	<body>
+		<h1>Welcome to BortNight</h1>
+        <div id="navbar">
+            <nav>
+                <ul>
+				<li><a id="navplay">Play</a></li>
+				<li><a id="navinstruction">Instruction</a></li>
+                <li><a id="navprofile" >Profile</a></li>
+                <li><a id="navleaderboard" >Leaderboard</a></li>
+                <li><a id="navlogout" >Logout</a></li>
+                </ul>            
+            </nav>
+        </div>
+		<div id="ui_login">
+			<h2>Login to BortNight</h2>
+			<div>
+				<input type="text" id="username" placeholder="Enter UserName" required />
+			</div>
+			<div>
+				<input type="password" id="password" placeholder="Enter Password" required />
+			</div>
+			<div>
+				<input type="submit" id="loginSubmit" value="Login">
+				<input type="submit" id="RSubmit" value="Register">
+			</div>
+			<div>
+				<label id="loginerror"></label>
+			</div>
+		</div>
+
+		<div id="ui_register">
+			<h2>Register to BortNight</h2>
+			<div>
+				<input type="text" id="regusername" placeholder="UserName" required />
+			</div>
+			<div>
+				<input type="password" id="regpassword" placeholder="Password" required />
+			</div>
+			What is your skill level?
+			<div>
+				<input type="radio" id="beginner" name="skill" value="beginner" required>
+				<label for="beginner">Beginner</label><br>
+				<input type="radio" id="intermediate" name="skill" value="intermediate">
+				<label for="intermediate">Intermediate</label><br>
+				<input type="radio" id="advanced" name="skill" value="advanced">
+				<label for="advanced">Advanced</label>
+			</div>
+			What time would you play?
+			<div>
+				<input type="checkbox" id="time1" name="time1" value="morning">
+				<label for="time1"> morning</label>
+				<input type="checkbox" id="time2" name="time2" value="afternoon">
+				<label for="time2"> afternoon</label>
+				<input type="checkbox" id="time3" name="time3" value="evening">
+				<label for="time3"> evening</label>
+			</div>
+			When is your birthday? 
+			<div>
+				<label for="birthday">Birthday:</label>
+				<input type="date" id="birthday" name="birthday" required>
+			</div>
+			<div>
+				<input type="submit" id="registerSubmit" value="Register new User">
+				<input type="submit" id="logSubmit" value="Go back to Login">
+			</div>
+			<div>
+				<label id="regerror"></label>
+			</div>
+		</div>
+
+		<div id="ui_play">
+			<center>
+				<canvas id="stage" width="800" height="800" style="border:1px solid black;"> </canvas>
+			</center>
+		</div>
+
+		<div id="ui_profile">
+			<h2>Profile Page</h2>
+			<label id="profile">asd</label>
+		</div>
+
+		<div id="ui_leaderboard">
+			<h2>Leaderboard</h2>
+		</div>
+
+		<div id="ui_instruction">
+			<h2>Instructions</h2>
+			Welcome to BortNight, Kill as many enemies as you can before you DIE!
+			Use WASD to move and left click to shoot Becareful of shooting to much
+			as the walls have a suprise. HAVE FUN!
+		</div>
+
+		<div id="ui_gameover">
+			Gameover final score is 
+			<input type="submit" id="startoverSubmit" value="Start Over">
+		</div>
+
+	</body>
+</html>
